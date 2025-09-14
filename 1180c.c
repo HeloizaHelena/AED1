@@ -7,7 +7,7 @@ int main(){
         scanf("%d", &N);
     }while(N <= 1 || N >= 1000);
 
-    int *X = (int *)malloc(sizeof(int));
+    int *X = (int *)malloc(N * sizeof(int));
     if (X == NULL) {
         printf("Erro de alocacao\n");
         return 1;
@@ -33,4 +33,5 @@ int main(){
     free(X);
 
     return 0;
+
 }
